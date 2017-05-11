@@ -16,7 +16,7 @@ public class BOARD {
 	{
 		feld = new int [7][7];
 	    sf = null;
-	    tile = new FIGURE [7][7];
+	    tile = new PIECE [7][7];
 	    curcolor = w;
 	}
 	
@@ -43,16 +43,22 @@ public class BOARD {
 		}
 	}
 	
+	
+	//
+	// Neuer Kommentar
+	//
+	
 	 public void doSomething(int x,int y){
 	        if(sf != null){
-	            if(tile[x][y] != null && currentcolor == tile[x][y].getColor()){
+	            if(tile[x][y] != null && curcolor == tile[x][y].getColor()){
 	                sf = tile[x][y];
 	            }else{
 	                if( sf.moveAllowed(x , y) ){
 	                    if(sf.getKind == N){
 	                        move(x,y);  // take in move aufrufen, prüfen ob jmd da steht
 	                    }else{
-	                        if(sf.getKind == K){
+	                        if(sf.getKind == K)
+	                        {
 	                            if(danger(x,y)){
 	                                Error();
 	                            }else{
