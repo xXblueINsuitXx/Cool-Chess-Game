@@ -3,17 +3,14 @@ public abstract class PIECE
 {
 
 	/* Definition von zwei Aufzählungstypen (enumeration types) */
-	protected enum COLOR { w, b}
-	protected enum KIND {pa, qu, ki, ro, bi, kn}	
+	protected String color;
+	protected String kind;	
 	
 	/* Attribut-Definitionen */
 	
 	protected TUPEL pos;
 	protected int number;
 	protected PIECE sf;
-	
-	protected COLOR color;
-	protected KIND kind;
 	
 	public PIECE (KIND kindNeu, COLOR colorNeu, int xNeu, int yNeu)
 	{

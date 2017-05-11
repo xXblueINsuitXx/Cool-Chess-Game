@@ -1,5 +1,6 @@
 
-public class TUPEL {
+public class TUPEL 
+{
 
 	private int x, y;
 	
