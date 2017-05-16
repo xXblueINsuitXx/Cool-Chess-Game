@@ -1,6 +1,6 @@
 public class BISHOP extends PIECE
 {
-	public BISHOP(KIND kindNeu, COLOR colorNeu,int xNeu, int yNeu)
+	public BISHOP(String kindNeu, String colorNeu,int xNeu, int yNeu)
 	{
 		super(kindNeu, colorNeu, xNeu, yNeu);
 		kind = "B";

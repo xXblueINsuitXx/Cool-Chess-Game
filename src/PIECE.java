@@ -12,7 +12,7 @@ public abstract class PIECE
 	protected int number;
 	protected PIECE sf;
 	
-	public PIECE (KIND kindNeu, COLOR colorNeu, int xNeu, int yNeu)
+	public PIECE (String kindNeu, String colorNeu, int xNeu, int yNeu)
 	{
 		kind = kindNeu;
 		color = colorNeu;
@@ -21,12 +21,12 @@ public abstract class PIECE
 	}
 	
 	
-	public COLOR getColor()
+	public String getColor()
 	{
 		return color;
 	}
 	
-	public KIND getKind()
+	public String getKind()
 	{
 		return kind;
 	}
